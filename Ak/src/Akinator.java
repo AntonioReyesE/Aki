@@ -138,7 +138,7 @@ public class Akinator<E extends Comparable <E>> extends JFrame implements MouseL
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args) {//Main del juego
 		Akinator<String> akinator = new Akinator<String>(new DesTree<String>());
 		akinator.repaint();
 		while(akinator.ganar == false){
