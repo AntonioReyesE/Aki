@@ -1,7 +1,5 @@
 
 public class NodoDes <E extends Comparable<E>> {
-	
-
 
 	private String question;
 	private String id;
