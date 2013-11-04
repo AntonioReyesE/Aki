@@ -1,5 +1,7 @@
 
 public class NodoDes <E extends Comparable<E>> {
+	
+
 
 	private String question;
 	private String id;
@@ -66,6 +68,15 @@ public class NodoDes <E extends Comparable<E>> {
 
 	@Override
 	public String toString() {
-		return id +"@"+ question + ",";
+		if(yes == null && no == null){
+			return ","+id+"@"+question;
+		}
+		else if(yes == null && no != null){
+			return	","+id+"@"+question+no;
+		}
+		else if(yes != null && no == null){
+			return	","+id+"@"+question+yes;
+		}
+		return	","+id+"@"+question+yes+no;
 	}
 }
