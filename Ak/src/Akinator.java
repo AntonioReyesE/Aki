@@ -7,7 +7,7 @@ import javax.swing.JOptionPane;
 
 public class Akinator<E extends Comparable <E>> extends JFrame implements MouseListener {
 	
-	private DesTree<E> tree;
+	private DesTree<E> tree;///mensaje de prueba///
 	private NodoDes<E> node;
 	private boolean ganar;
 	private Image genio, feliz, triste, dialogo,fondo;
