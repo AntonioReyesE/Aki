@@ -66,7 +66,6 @@ public class NodoDes <E extends Comparable<E>> {
 
 	@Override
 	public String toString() {
-		return "NodoDes [question=" + question + ", id=" + id + ", yes=" + yes
-				+ ", no=" + no + "]";
+		return id +"@"+ question + ",";
 	}
 }
