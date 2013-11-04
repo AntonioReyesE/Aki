@@ -1,21 +1,17 @@
 import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
-
 public class Akinator<E extends Comparable <E>> extends JFrame implements MouseListener {
 	
-
 	private DesTree<E> tree;
 	private NodoDes<E> node;
 	private boolean ganar;
 	private Image genio, feliz, triste, dialogo,fondo;
 	
-
 	public Akinator(DesTree<E> root) {//se tiene que cambiar la direccion del file para que sea local
 		super();
 		this.setTree(root);
@@ -33,7 +29,6 @@ public class Akinator<E extends Comparable <E>> extends JFrame implements MouseL
 		this.fondo = new ImageIcon("src/cool.jpg").getImage();
 		this.dialogo = new ImageIcon("src/talk.png").getImage();
 	}
-
 	
 	public boolean isGanar() {
 		return ganar;
